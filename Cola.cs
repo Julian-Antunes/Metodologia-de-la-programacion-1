@@ -11,7 +11,6 @@ namespace Metodologia_de_la_programacion_1
         List<iComparable> elementos;
         public Cola() { this.elementos = new List<iComparable>();}
         public void encolar (iComparable c) {
-            Console.WriteLine("Entro a encolar con ", c);
             this.elementos.Add(c); }  
         public iComparable desencolar()
         {
@@ -45,7 +44,7 @@ namespace Metodologia_de_la_programacion_1
         }
         public void agregar(iComparable c)
         {
-            Console.WriteLine("Entro a agregar con ", c);
+            
             this.encolar(c);
         }
 

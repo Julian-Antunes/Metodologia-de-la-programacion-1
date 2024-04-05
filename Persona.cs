@@ -16,8 +16,10 @@ namespace Metodologia_de_la_programacion_1
         public string getNombre() { return this.nombre; }
         public int getDNI() { return this.dni; }
 
-        public bool sosIgual(iComparable c) { return this.dni == ((Numero)c).getValor(); }
-        public bool sosMenor(iComparable c) { return this.dni < ((Numero)c).getValor(); }
-        public bool sosMayor(iComparable c) { return this.dni > ((Numero)c).getValor(); }
+        public bool sosIgual(iComparable c) { return this.dni == ((Persona)c).dni; }
+        public bool sosMenor(iComparable c) { return this.dni < ((Persona)c).dni; }
+        public bool sosMayor(iComparable c) { return this.dni > ((Persona)c).dni; }
+
+      
     }
 }
